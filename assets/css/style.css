@@ -1,0 +1,120 @@
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+    background-image: url('assets/img/VirusBackground.jpg');
+    background-size: cover;
+    /* background-color: lightblue; */
+}
+  
+h1 {
+    font-size: 24px;
+}
+  
+p {
+    font-size: 16px;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+ 
+.button {
+    border: 5px solid cornflowerblue;
+    border-radius: 8px;
+    padding: 15px 32px;
+    color: black;
+    
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    display: inline-block;
+
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+.button p {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1em;
+}
+.button:hover p {
+    color: white;
+}
+  
+/* Header Flexbox */
+.headercontainer {
+    text-align: center;
+    justify-content: center;
+    padding: 5em;
+}
+.headercontainer h1 {
+    font-size: 48px;
+    color: green;
+}
+.headercontainer h2 {
+    font-size: 20px;
+    color: #555;
+    padding: 2em;
+}
+   
+/* Information Flexbox */
+.infocontainer {
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infocontainer-Content{
+    text-align: center;
+    padding: 3em;
+
+    margin: 10px;
+    border: 5px solid goldenrod;
+
+    /*
+    filter: opacity(0%);
+    transition: 100ms filter ease-in;
+    */
+}
+.infocontainer-Content h1 {
+    font-size: 40px;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+.infocontainer-Content h2 {
+    font-size: 25px;
+    padding: 0.5em;
+    font-weight: bold;
+}
+.infocontainer-Content p {
+    font-size: 15px;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+/*
+.infocontainer-Content div:hover {
+    transition: 100ms filter ease-out;
+    filter: none;
+}
+*/
+
+.line {
+    border-top: 1px;
+    border-color: black;
+}
