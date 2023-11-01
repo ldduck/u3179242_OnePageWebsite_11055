@@ -29,6 +29,10 @@ a {
     color: cornflowerblue;
 }
 
+footer {
+    padding: 10em
+}
+
  
 .button {
     border: 5px solid cornflowerblue;
