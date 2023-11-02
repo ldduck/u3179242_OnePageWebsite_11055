@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 
@@ -12,7 +12,8 @@ body {
 }
   
 h1 {
-    font-size: 24px;
+    font-size: 3rem;
+    font-weight: bold;
 }
   
 p {
@@ -121,4 +122,29 @@ footer {
 .line {
     border-top: 1px;
     border-color: black;
+}
+
+/* Experimental and Trial CSS for HTML & JavaScript*/
+.highlighted {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}
+
+.active {
+    display: flex;
+    background-color: #555;
+    color: aliceblue;
+    text-align: right;
+    padding: 3em;
+
+}
+.inactive {
+    background-color: coral;
+    color: white;
+    text-align: left;
+    padding: 3em;
+
 }
