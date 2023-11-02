@@ -6,8 +6,7 @@
 
 //document.getElementById("change").style.backgroundColor = "blue";
 
-let internetSec = document.querySelector("#internet")
-//internetSticky.style.backgroundColor = "lightBlue"
+
 
 // Changes the content of an id
 function highlight(){
@@ -24,3 +23,9 @@ function toggleFunction() {
         element.className = "inactive"
     }
 }
+
+
+
+
+
+  
