@@ -79,10 +79,11 @@ footer {
    
 /* Information Flexbox */
 .infocontainer {
-    display: inline;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5em;
 }
 /*.infocontainer-Content{
     text-align: center;
@@ -118,15 +119,15 @@ footer {
     /* positions the text, ensures there are no borders or outlines styled to create a solid block, and gives it a flexable width */
     padding: 1em;
     width: 100%;
+
     border: none;
     outline: none;
-    text-align: left;
+    text-align: center;
 
     /* sets font size in relation to body default, changes cursor when mouser is over the button */
     font-size: 1rem;
     cursor: pointer;
 }
-
 .open , .collapsing:hover {
     /* changes the colour when mouse is hovering over the button and when its been clicked */
     background-color: coral;
@@ -134,13 +135,29 @@ footer {
 
 .infocontainer-Content {
     /* content div styling and transition, overflow: hidden hides text that is too big for the content area*/
-    background-color: green;
-    color: white;
-
     padding: 0rem 1rem;
+    text-align: center;
     max-height: 0;
-    width: 100%;
+
     overflow: hidden;
     transition: 0.3s ease;
+    background-color: #f1f1f1;
+}
+.infocontainer-Content h1 {
+    font-size: 40px;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+.infocontainer-Content h2 {
+    font-size: 25px;
+    padding: 0.5em;
+    font-weight: bold;
+}
+.infocontainer-Content p {
+    font-size: 15px;
+    line-height: 1.5em;
+    padding-bottom: 1em;
 }
 /**/
+/*I have some styles clashing, I worked on this in a separate folder to make sure I can understand it first and then implement*/
+/*I'll fix those when I start seriously styling*/
