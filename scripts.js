@@ -1,10 +1,5 @@
 //alert("hello")
 
-// Changes the content of an id
-function highlight(){
-    var element = document.getElementById("highDiv");
-    element.classList.add("highlighted");
-}
 
 // Toggles between two css styles - Might be useful when combined with slide effect (if possible?)
 function toggleFunction() {
@@ -16,7 +11,7 @@ function toggleFunction() {
     }
 }
 
-// COLLAPSIBLE BOXES //
+// Collapsible Boxes //
 // declaring variables, var collapsed is setting a class as a variable
 var collapsed = document.getElementsByClassName("collapsing");
 var i;

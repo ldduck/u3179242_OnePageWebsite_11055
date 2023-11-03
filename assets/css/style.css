@@ -84,17 +84,13 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.infocontainer-Content{
+/*.infocontainer-Content{
     text-align: center;
     padding: 3em;
 
     margin: 10px;
     border: 5px solid goldenrod;
 
-    /*
-    filter: opacity(0%);
-    transition: 100ms filter ease-in;
-    */
 }
 .infocontainer-Content h1 {
     font-size: 40px;
@@ -112,39 +108,39 @@ footer {
     padding-bottom: 1em;
 }
 
-/*
-.infocontainer-Content div:hover {
-    transition: 100ms filter ease-out;
-    filter: none;
-}
-*/
 
-.line {
-    border-top: 1px;
-    border-color: black;
-}
+/* Collapsible Boxes */
+.collapsing {
+    /* sets background and text colours*/
+    background-color: cornflowerblue;
+    color: white;
 
-/* Experimental and Trial CSS for HTML & JavaScript*/
-.highlighted {
+    /* positions the text, ensures there are no borders or outlines styled to create a solid block, and gives it a flexable width */
+    padding: 1em;
     width: 100%;
-    padding: 25px;
-    background-color: coral;
-    color: white;
-    font-size: 25px;
-}
-
-.active {
-    display: flex;
-    background-color: #555;
-    color: aliceblue;
-    text-align: right;
-    padding: 3em;
-
-}
-.inactive {
-    background-color: coral;
-    color: white;
+    border: none;
+    outline: none;
     text-align: left;
-    padding: 3em;
 
+    /* sets font size in relation to body default, changes cursor when mouser is over the button */
+    font-size: 1rem;
+    cursor: pointer;
 }
+
+.open , .collapsing:hover {
+    /* changes the colour when mouse is hovering over the button and when its been clicked */
+    background-color: coral;
+}
+
+.infocontainer-Content {
+    /* content div styling and transition, overflow: hidden hides text that is too big for the content area*/
+    background-color: green;
+    color: white;
+
+    padding: 0rem 1rem;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+/**/
