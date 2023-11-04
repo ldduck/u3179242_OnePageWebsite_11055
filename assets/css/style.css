@@ -80,13 +80,13 @@ footer {
 /* Information Flexbox */
 .infocontainer {
     display: flex;
-
     flex-direction: column;
     justify-content: center;
 
     padding: 5em;
 
 }
+
 /*.infocontainer-Content{
     text-align: center;
     padding: 3em;
@@ -137,7 +137,7 @@ footer {
 
 .infocontainer-Content {
     /* content div styling and transition, overflow: hidden hides text that is too big for the content area*/
-    padding: 0rem 1rem;
+    padding: 0rem 4rem;
     text-align: center;
     max-height: 0;
     max-width: 100%;
@@ -162,5 +162,3 @@ footer {
     padding-bottom: 1em;
 }
 /**/
-/*I have some styles clashing, I worked on this in a separate folder to make sure I can understand it first and then implement*/
-/*I'll fix those when I start seriously styling*/
