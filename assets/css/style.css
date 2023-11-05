@@ -15,6 +15,10 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
+h2 {
+    font-size: 1.5rem;
+}
   
 p {
     font-size: 16px;
@@ -22,16 +26,30 @@ p {
 
 small {
     font-size: 0.75em;
+    padding: none;
 }
 
 
 a {
     text-decoration: none;
-    color: cornflowerblue;
+    color: rgb(64, 123, 232);
 }
 
-/* Header Styling */
+.intro {
+    margin: auto;
+    text-align: center;
+    padding-top: 5em;
+    line-height: 2em;
 
+    background-color: white;
+    }
+.intro h2 {
+    font-size: 2rem;
+    padding-bottom: .5em;
+}
+
+
+/* Header Styling */
 header .navigationstyle {
     display: flex;
     justify-content: center; 
@@ -40,6 +58,8 @@ header .navigationstyle {
 
     height: 5em;
     padding: 2em;
+
+    background-color: white;
 }
 header nav ul {
     display: grid;
@@ -48,15 +68,39 @@ header nav ul {
     grid-column-gap: 18px;
     grid-row-gap: 18px;
 
-    padding: 1em;
-    border: solid #9a0a0a;
-    border-width: 5px;
+}
+
+/* Navigation Styling */
+.navhighlight {
+    border-bottom: none;
+}
+.navhighlight:hover{
+    border-bottom: 2.5px solid coral;
+
+    font-weight: bold;
+
 }
 
 /**/
 
+/* Footer Styling */
 footer {
-    padding: 10em
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    height: 4em;
+    width: 100%;
+    padding-top: 2.5em;
+}
+
+footer p {
+    color: white;
+    font-size: .75em;
+    font-weight: lighter;
+    line-height: 0.5em;
+    margin-bottom: 1em;
+    padding: 0em 2em;
+    text-align: center;
 }
 
 button {
@@ -112,7 +156,6 @@ button {
     padding: 2em;
 }
 
-
 .govlogo {
     display: block;
     object-fit: contain;
@@ -120,7 +163,6 @@ button {
     width: 400px;
     height: 200px;
 }
-
 
    
 
@@ -140,7 +182,8 @@ button {
 /* Collapsible Boxes */
 .collapsing {
     /* sets background and text colours*/
-    background-color: rgb(40, 108, 233);
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
     color: white;
 
     /* positions the text, ensures there are no borders or outlines styled to create a solid block, and gives it a flexable width */
@@ -171,13 +214,13 @@ button {
 
     overflow: hidden;
     transition: 0.3s ease;
-    background-color:#f1f1f1;
-
     
-
+    background-color: #8ecae6;
+    color: #3A3B3C;
 }
 .infocontainer-Content h1 {
-    padding: 1em 2em
+    padding: 1em 2em;
+    color: white;    
 }
 .infocontainer-Content h2 {
     font-size: 25px;
@@ -187,6 +230,8 @@ button {
 .infocontainer-Content p {
     font-size: 15px;
     line-height: 1.5em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 /**/

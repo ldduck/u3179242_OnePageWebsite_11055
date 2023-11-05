@@ -2,6 +2,7 @@
 
 
 // Toggles between two css styles - Might be useful when combined with slide effect (if possible?)
+// Did not end up utilising this function
 function toggleFunction() {
     var element = document.getElementById("toggleButton");
     if (element.className == "inactive") {
