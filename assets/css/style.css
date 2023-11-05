@@ -6,9 +6,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 
-    background-image: url('assets/img/VirusBackground.jpg');
+    background-image: url(/assets/img/VirusBackground.jpg);
     background-size: cover;
-    /* background-color: lightblue; */
 }
   
 h1 {
@@ -28,6 +27,8 @@ small {
     font-size: 0.75em;
     padding: none;
 }
+
+
 
 
 a {
