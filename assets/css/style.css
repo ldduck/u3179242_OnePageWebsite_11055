@@ -108,9 +108,7 @@ button {
 }
 
  
-.button {
-    border: 5px solid cornflowerblue;
-    border-radius: 8px;
+.emphasis {
     padding: 15px 32px;
     color: black;
     
@@ -119,20 +117,14 @@ button {
     color: black;
     display: inline-block;
 
-    transition-duration: 0.4s;
 }
-.button:hover {
-    background-color: cornflowerblue;
-    color: white;
-}
-.button p {
-    font-size: 15px;
+
+.emphasis p {
+
     font-weight: bold;
     padding: 1em;
 }
-.button:hover p {
-    color: white;
-}
+
 
 
 /* Header */
@@ -200,6 +192,7 @@ button {
 }
 .open , .collapsing:hover {
     /* changes the colour when mouse is hovering over the button and when its been clicked */
+    background: none;
     background-color: coral;
 }
 
