@@ -20,11 +20,11 @@ var i;
 for (i=0; i< collapsed.length;i++) {
     collapsed[i].addEventListener("click", function() {
         this.classList.toggle("open"); // this. allows this effect to be used else where, specifying this specific instance
-        var content = this.nextElementSibling; // connects the two boxes together
+        var content = this.nextElementSibling; // 'connects' the two boxes together
         if (content.style.maxHeight) {
-            content.style.maxHeight = null;
+            content.style.maxHeight = null; //sets the height of the content box
         }   else {
-            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.maxHeight = content.scrollHeight + "px"; // expands the content box
         }
     });
 }

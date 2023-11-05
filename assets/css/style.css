@@ -12,7 +12,7 @@ body {
 }
   
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
   
@@ -30,8 +30,37 @@ a {
     color: cornflowerblue;
 }
 
+/* Header Styling */
+
+header .navigationstyle {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+
+    height: 5em;
+    padding: 2em;
+}
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+
+    padding: 1em;
+    border: solid #9a0a0a;
+    border-width: 5px;
+}
+
+/**/
+
 footer {
     padding: 10em
+}
+
+button {
+    font-weight: bold;
 }
 
  
@@ -60,67 +89,50 @@ footer {
 .button:hover p {
     color: white;
 }
-  
+
+
 /* Header */
 .headercontainer {
     text-align: center;
     justify-content: center;
     padding: 5em;
+
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%); 
 }
 .headercontainer h1 {
     font-size: 48px;
-    color: green;
+    color: white;
 }
 .headercontainer h2 {
     font-size: 20px;
-    color: #555;
+    color:white;
     padding: 2em;
 }
    
+
 /* Information Flexbox */
 .infocontainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    padding: 5em;
-
-}
-
-/*.infocontainer-Content{
+    justify-content:  space-between;
     text-align: center;
-    padding: 3em;
 
-    margin: 10px;
-    border: 5px solid goldenrod;
+    margin: 5em;
 
 }
-.infocontainer-Content h1 {
-    font-size: 40px;
-    padding-bottom: 0.5em;
-    font-weight: bold;
-}
-.infocontainer-Content h2 {
-    font-size: 25px;
-    padding: 0.5em;
-    font-weight: bold;
-}
-.infocontainer-Content p {
-    font-size: 15px;
-    line-height: 1.5em;
-    padding-bottom: 1em;
-}
+/**/
 
 
 /* Collapsible Boxes */
 .collapsing {
     /* sets background and text colours*/
-    background-color: cornflowerblue;
+    background-color: rgb(40, 108, 233);
     color: white;
 
     /* positions the text, ensures there are no borders or outlines styled to create a solid block, and gives it a flexable width */
     padding: 1em;
-    width: 100%;
+    width: 75%;
 
     border: none;
     outline: none;
@@ -135,21 +147,24 @@ footer {
     background-color: coral;
 }
 
+
 .infocontainer-Content {
     /* content div styling and transition, overflow: hidden hides text that is too big for the content area*/
-    padding: 0rem 4rem;
+    margin: auto;
     text-align: center;
     max-height: 0;
-    max-width: 100%;
+    width: 75%;
+
 
     overflow: hidden;
     transition: 0.3s ease;
-    background-color: #f1f1f1;
+    background-color:#f1f1f1;
+
+    
+
 }
 .infocontainer-Content h1 {
-    font-size: 40px;
-    padding-bottom: 0.5em;
-    font-weight: bold;
+    padding: 1em 2em
 }
 .infocontainer-Content h2 {
     font-size: 25px;
